@@ -1,0 +1,35 @@
+#include <iostream>
+#include <string>
+
+using namespace std;
+int main(){
+
+    float id,alt;
+    string Nm;
+    bool est;
+
+    cout<<"Complete a baixo o formulário com seus dados:"<<endl;
+    cout<<"Nome:"<<endl;
+    cin>>Nm;
+    cout<<"Idade:"<<endl;
+    cin>>id;
+    cout<<"Altura:"<<endl;
+    cin>>alt;
+    cout<<"Estudante (sim ou não ): "<<endl;
+    cin>>est;
+
+    cout<<endl;
+    cout<<"Dados preenchidos com sucesso!"<<endl;
+    cout<<endl;
+
+    cout<<"Dados preenchidos:"<<endl;
+    cout<<"Nome: "<<Nm<<endl;
+    cout<<"Idade: "<<id<<endl;
+    cout<<"Altura: "<<alt<<endl;
+
+    if (est==false){
+        cout<<"Estudante: não"<<endl;
+    }
+    else
+        cout<<"Estudante: sim"<<endl;
+}
