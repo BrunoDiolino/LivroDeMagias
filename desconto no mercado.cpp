@@ -11,7 +11,7 @@ int main() {
          << "frenchfries:$300" << endl;
     cout << "Please enter the item you want and how many to buy: ";
 
-    string item;¢
+    string item;
     int quantity;
     cin >> item >> quantity;
 
