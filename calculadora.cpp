@@ -26,22 +26,23 @@ int main() {
             break;
             
         case '/':
-            if (num2 != 0) {  // Correção: != em vez de != =
+            if (num2 != 0) { 
                 res = num1 / num2;
                 cout << "O resultado e: " << res << endl;
             } else {
                 cout << "Erro: Divisao por zero!" << endl;
             }
-            break;  // Adicionado break para evitar fall-through
+            break;  
             
-        case 'x':  // ou case '*' se preferir o símbolo padrão de multiplicação
+        case 'x':  
             res = num1 * num2;
             cout << "O resultado e: " << res << endl;
-            break;  // Removido o "breal;" errado
+            break;  
             
         default:
             cout << "Operador invalido!" << endl;
     }
 
     return 0;
+
 }
