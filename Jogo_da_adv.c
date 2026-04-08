@@ -11,8 +11,10 @@ int main() {
     int tentativas =0 ; 
     whilhe(ganhou ==0){
         
-        printf("Tentativa %d\n",tentativas+1);
+        printf("Tentativa %d\n",tentativas++);
         printf("qual é o seu chute? ");
+        scanf("%d", &chute);
+        
         if (Numsec<0){
             printf("Você não pode chutar numeros negatigos, tente novamente!!\n");
             tentativas--;
@@ -31,7 +33,7 @@ int main() {
             printf("Seu chute foi maior que o numero secreto\n");
             }else{
                 printf("seu chute foi menor que o numero secreto\n");
-                tentativas = tentativas+1;
+                tentativas = tentativas++;
              }
         }
     }
