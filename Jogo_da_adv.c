@@ -7,17 +7,23 @@ int main() {
 
     int Numsec = 42;
     int chute;
-
-    for(int=i;i<=3;i++){
-        printf("Tentativa %d de 3\n",i);
+    int ganhou = 0;
+    int tentativas =0 ; 
+    whilhe(ganhou ==0){
+        
+        printf("Tentativa %d\n",tentativas+1);
         printf("qual é o seu chute? ");
-
+        if (Numsec<0){
+            printf("Você não pode chutar numeros negatigos, tente novamente!!\n");
+            tentativas--;
+            continue;
+}
         int acertou = (chute == Numsec);
 
         if(acertou){
             printf("paraben!!Você acertou!\n");
             printf("Jogue de novo, você é um bom jogador\n");
-        break;
+        ganhou = 1;
         } 
         else{
         int maior = chute > Numsec;
@@ -25,6 +31,7 @@ int main() {
             printf("Seu chute foi maior que o numero secreto\n");
             }else{
                 printf("seu chute foi menor que o numero secreto\n");
+                tentativas = tentativas+1;
              }
         }
     }
