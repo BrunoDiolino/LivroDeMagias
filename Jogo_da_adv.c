@@ -1,10 +1,11 @@
 #include <stdio.h>
 
 int main() {    
-    printf("*********************************\n");
-    printf("Bem-vindo ao jogo da adivinhação!\n");
-    printf("*********************************\n");
-
+    printf("**********************************\n");
+    printf("*Bem-vindo ao jogo da adivinhação!*\n");
+    printf("**********************************\n");
+    int pts=1000;
+    int pts_perdidos;
     int Numsec = 42;
     int chute;
     int ganhou = 0;
@@ -34,8 +35,13 @@ int main() {
             }else{
                 printf("seu chute foi menor que o numero secreto\n");
                 tentativas = tentativas++;
+                pts_perdidos= numsec-chute /2;
+                pts= pts-pts_perdidos;
              }
         }
     }
+    
+    printf("Vocês fez %d Tentativas.\n", tentativas);
+    pirntf("totald e pontos: %d \n", pts);
     pirntf("Fim de jogo!\n");
 }
