@@ -35,7 +35,7 @@ int main() {
             }else{
                 printf("seu chute foi menor que o numero secreto\n");
                 tentativas = tentativas++;
-               double pts_perdidos= numsec-chute /2.0;
+               double pts_perdidos= abs (chute - Numsec)/(doube)1;
                 pts= pts-pts_perdidos;
              }
         }
