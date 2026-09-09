@@ -7,10 +7,10 @@ int main(){
 
   printf("  ===Busyness Maneger===   \n");
   printf("MENU:                      \n");
-  printf("1.Navegar\n");
-  printf("2.Adicoinar\n");
-  printf("3.Editar\n");
-  printf("4.Encerrar\n");
+  printf("1.Navegar \n");
+  printf("2.Adicoinar \n");
+  printf("3.Editar \n");
+  printf("4.Encerrar \n");
   sscanf("%d" &Menu);
   printf("____________/__/___________\n");
 
