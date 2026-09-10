@@ -8,6 +8,25 @@ int main(){
  char empresa[20], Info[250], ID[10];
  int Valor, Dd,Mm,Yy,Menu ;
 
+ struct Empresa {
+   char nome [40];
+   char info [250];
+   char Id [10];
+
+ };
+
+ struct Add {
+
+ };
+
+ struct Edit {
+
+ };
+
+ struct Encerrar {
+  return 0;
+ };
+
   printf("  ===Busyness Maneger===   \n");
   printf("MENU:                      \n");
   printf("1.Navegar\n");
@@ -31,7 +50,7 @@ int main(){
       break;
 
     case 4:
-
+      fgets()
       break;
 
       default:
