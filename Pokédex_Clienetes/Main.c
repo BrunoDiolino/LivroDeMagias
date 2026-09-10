@@ -5,7 +5,6 @@
 
 
 int main(){
- char empresa[20], Info[250], ID[10];
  int Valor, Dd,Mm,Yy,Menu ;
 
  struct Empresa {
@@ -16,7 +15,8 @@ int main(){
  };
 
  struct Add {
-
+  printf("Nome da empresa\n");
+  fgets (Empresa.nome[40])
  };
 
  struct Edit {
@@ -27,12 +27,18 @@ int main(){
   return 0;
  };
 
+  struct CleanBuffer{
+  int c;
+  while ((c=getchar()) != '\n' && c != EOF {}
+};
+
   printf("  ===Busyness Maneger===   \n");
   printf("MENU:                      \n");
   printf("1.Navegar\n");
   printf("2.Adicoinar\n");
-  printf("3.Editar\n");
-  printf("4.Encerrar\n");
+  printf("3.Editar\n")
+  printf("4.Limpar Buffer\n");
+  printf("5.Encerrar \n");
   sscanf("%d" &Menu);
   printf("____________/__/___________\n");
 
@@ -49,8 +55,12 @@ int main(){
 
       break;
 
-    case 4:
-      fgets()
+    case 4: 
+      fgets(CleanBuffer);
+      break;
+
+    case 5:
+      fgets(Encerrar);
       break;
 
       default:
