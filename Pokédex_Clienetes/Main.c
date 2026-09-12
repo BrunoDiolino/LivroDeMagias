@@ -15,8 +15,15 @@ int main(){
  };
 
  struct Add {
-  printf("Nome da empresa\n");
-  fgets (Empresa.nome[40])
+  printf("Nome da empresa:\n");
+  fgets (Empresa.nome)
+  
+  printf("Informações da empresa:\n");
+  fgets (Empresa.info)
+
+  printf("Id:\n");
+  fgets(Empresa.Id)
+    return
  };
 
  struct Edit {
@@ -32,7 +39,7 @@ int main(){
   while ((c=getchar()) != '\n' && c != EOF {}
 };
 
-  printf("  ===Busyness Maneger===   \n");
+  printf("  ===Bussyness Maneger===   \n");
   printf("MENU:                      \n");
   printf("1.Navegar\n");
   printf("2.Adicoinar\n");
