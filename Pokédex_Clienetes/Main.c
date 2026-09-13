@@ -14,6 +14,10 @@ int main(){
 
  };
 
+ struct Navegar {
+  printf("%); 
+ };
+
  struct Add {
   printf("Nome da empresa:\n");
   fgets (Empresa.nome)
@@ -23,11 +27,12 @@ int main(){
 
   printf("Id:\n");
   fgets(Empresa.Id)
-    return
+    return 0;
  };
 
  struct Edit {
-
+  printf("Qual empresa gostaria de editar ?\n");
+  
  };
 
  struct Encerrar {
@@ -55,11 +60,11 @@ int main(){
       break;
     
     case 2:
-    
+    fgets(Add)
       break;
    
     case 3:
-
+      fgets(Edit);
       break;
 
     case 4: 
