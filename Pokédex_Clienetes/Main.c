@@ -2,7 +2,7 @@
 #include<string.h>
 #include<stdlib.h>
 
-
+#define Acervo[20]
 
 int main(){
  int Valor, Dd,Mm,Yy,Menu ;
