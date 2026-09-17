@@ -8,7 +8,7 @@ int main(){
  
  struct Data {
  int Dia,Mes,Ano;
-}
+};
  
  struct Empresa {
    char nome [40];
