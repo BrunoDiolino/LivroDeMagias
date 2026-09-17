@@ -5,8 +5,11 @@
 #define Acervo[20]
 
 int main(){
- int Valor, Dd,Mm,Yy,Menu ;
-
+ 
+ struct Data {
+ int Dia,Mes,Ano;
+}
+ 
  struct Empresa {
    char nome [40];
    char info [250];
