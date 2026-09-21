@@ -8,7 +8,7 @@ int main(){
  
  struct Data {
  int Dia,Mes,Ano;
-};
+  };
  
  struct Empresa {
    char nome [40];
@@ -18,7 +18,7 @@ int main(){
  };
 
  struct Navegar {
-  printf("%); 
+  printf("%s\n"); 
  };
 
  struct Add {
@@ -45,42 +45,46 @@ int main(){
   struct CleanBuffer{
   int c;
   while ((c=getchar()) != '\n' && c != EOF {}
-};
+  };
+  ///Menu
+  do{
+    printf("  ===Bussyness Maneger===   \n");
+    printf("MENU:                      \n");
+    printf("1.Navegar\n");
+    printf("2.Adicoinar\n");
+    printf("3.Editar\n")
+    printf("4.Ordenar por data de adição\n");
+    printf("5.Encerrar \n");
+    sscanf("%d" &Menu);
+    printf("____________/__/___________\n");
 
-  printf("  ===Bussyness Maneger===   \n");
-  printf("MENU:                      \n");
-  printf("1.Navegar\n");
-  printf("2.Adicoinar\n");
-  printf("3.Editar\n")
-  printf("4.Limpar Buffer\n");
-  printf("5.Encerrar \n");
-  sscanf("%d" &Menu);
-  printf("____________/__/___________\n");
+    switch (Menu) {
+      case 1:
+        fgets(Navegar);
+       break;
+      
+      case 2:
+        fgets(Add);
+       break;
+      
+      case 3:
+        fgets(Edit);
+       break;
+      
+      case 4: 
+        fgets(Ordenar);
+       break;
 
-  switch (Menu) {
-    case 1:
-
-      break;
-    
-    case 2:
-    fgets(Add)
-      break;
-   
-    case 3:
-      fgets(Edit);
-      break;
-
-    case 4: 
-      fgets(CleanBuffer);
-      break;
-
-    case 5:
-      fgets(Encerrar);
-      break;
+      case 5:
+        fgets(Encerrar);
+       break;
 
       default:
       printf("Valor invalido\n");
-  }
+    }
+    fgets(CleanBuffer);
+  }while(Menu1!=5)
+  
 
   return 0
 }
