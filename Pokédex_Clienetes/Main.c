@@ -6,7 +6,7 @@
 
 int main(){
  
- struct Data {
+ void struct Data() {
  int Dia,Mes,Ano;
   };
  
@@ -17,7 +17,7 @@ int main(){
 
  };
 
- struct Navegar {
+ void struct Navegar () {
   printf("%s\n"); 
  };
 
@@ -31,21 +31,22 @@ int main(){
   printf("Id:\n");
   fgets(Empresa.Id)
     return 0;
- };
+  };
 
- struct Edit {
-  printf("Qual empresa gostaria de editar ?\n");
+  struct Edit {
+    printf("Qual empresa gostaria de editar ?\n");
   
- };
+  };
 
- struct Encerrar {
-  return 0;
- };
+ void struct Ordenar(){
+ 
+};
 
   struct CleanBuffer{
   int c;
   while ((c=getchar()) != '\n' && c != EOF {}
   };
+
   ///Menu
   do{
     printf("  ===Bussyness Maneger===   \n");
@@ -76,7 +77,7 @@ int main(){
        break;
 
       case 5:
-        fgets(Encerrar);
+        printf("Encerrando o programa...\n");
        break;
 
       default:
