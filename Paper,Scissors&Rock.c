@@ -1,3 +1,4 @@
+#include <stdio.h>
 #include <string.h>
 
 const char* rps(const char* p1, const char* p2)
